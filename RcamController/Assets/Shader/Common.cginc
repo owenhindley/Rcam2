@@ -46,7 +46,13 @@ float4 Fragment(float4 vertex : SV_Position,
 {
 #ifdef RCAM_MULTIPLEXER
 
-    float4 tc = frac(texCoord.xyxy * float4(1, 1, 2, 2));
+    #ifdef VOLTA_SKIP_MASK
+        float4 tc = frac(texCoord.xyxy * float4(1, 1, 1, 1));
+    #else
+        float4 tc = frac(texCoord.xyxy * float4(1, 1, 2, 2));
+    #endif
+
+    
 
     // Aspect ration compensation & vertical flip
     tc.yw = (0.5 - tc.yw) * _AspectFix + 0.5;
@@ -68,7 +74,13 @@ float4 Fragment(float4 vertex : SV_Position,
     float3 c3 = mask;
 
     // Output
-    float3 srgb = tc.x < 0.5 ? c1 : (tc.y < 0.5 ? c2 : c3);
+    #ifdef VOLTA_SKIP_MASK
+        float3 srgb = tc.x < 0.5 ? c1 : c2;
+    #else
+        float3 srgb = tc.x < 0.5 ? c1 : (tc.y < 0.5 ? c2 : c3);
+    #endif
+
+    
     return float4(GammaToLinearSpace(srgb), 1);
 
 #endif

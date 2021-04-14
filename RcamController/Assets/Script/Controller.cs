@@ -3,11 +3,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 using Klak.Ndi;
+using Klak.VJUI;
 
 namespace Rcam2 {
 
 sealed class Controller : MonoBehaviour
 {
+    
     #region External scene object references
 
     [Space]
@@ -45,6 +47,8 @@ sealed class Controller : MonoBehaviour
 
     Material _bgMaterial;
     Material _muxMaterial;
+
+    public bool sendMaskOverNDI = false;
 
     RenderTexture _senderRT;
 
@@ -131,6 +135,16 @@ sealed class Controller : MonoBehaviour
 
         _muxMaterial = new Material(_shader);
         _muxMaterial.EnableKeyword("RCAM_MULTIPLEXER");
+        if (!sendMaskOverNDI)
+        {
+            _muxMaterial.EnableKeyword("VOLTA_SKIP_MASK");
+        }
+        else
+        {
+            _muxMaterial.DisableKeyword("VOLTA_SKIP_MASK");
+        }
+        
+        
 
         // Custom background material
         _cameraBackground.customMaterial = _bgMaterial;
@@ -179,6 +193,21 @@ sealed class Controller : MonoBehaviour
         // NDI sender RT update
         Graphics.Blit(null, _senderRT, _muxMaterial, 0);
     }
+
+    public void ToggleMaskMode()
+    {
+        sendMaskOverNDI = !sendMaskOverNDI;
+        
+        if (!sendMaskOverNDI)
+        {
+            _muxMaterial.EnableKeyword("VOLTA_SKIP_MASK");
+        }
+        else
+        {
+            _muxMaterial.DisableKeyword("VOLTA_SKIP_MASK");
+        }
+
+    } 
 
     //
     // Update the NDI metadata in OnRenderObject

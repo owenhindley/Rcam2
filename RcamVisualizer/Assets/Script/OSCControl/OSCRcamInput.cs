@@ -30,7 +30,7 @@ public class OSCRcamInput : MonoBehaviour
             var msg = oscReceiver.getNextMessage();
             if (msg != null)
             {
-                Debug.Log("Message from OSC : " + msg.Address);
+                //Debug.Log("Message from OSC : " + msg.Address);
                 HandleMessage(msg);
             }
         }

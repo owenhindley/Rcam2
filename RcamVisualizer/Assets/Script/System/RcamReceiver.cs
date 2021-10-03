@@ -91,7 +91,7 @@ sealed class RcamReceiver : MonoBehaviour
                 Singletons.InputHandle.InputState = _metadata.InputState;
                 break;
             case INPUT_MODE.OSC_INPUT:
-                Singletons.InputHandle.InputState = _metadata.InputState;
+                Singletons.InputHandle.InputState = OSCRcamInput.inputState;
                 break;
         }
         

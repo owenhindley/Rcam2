@@ -942,7 +942,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &384911837
 Transform:
   m_ObjectHideFlags: 0
@@ -1051,7 +1051,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 392662326}
+  - {fileID: 392662330}
   m_VisualEffect: {fileID: 392662329}
 --- !u!73398921 &392662328
 VFXRenderer:
@@ -1737,7 +1739,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 643685941}
+  - {fileID: 643685945}
   m_VisualEffect: {fileID: 643685944}
 --- !u!73398921 &643685943
 VFXRenderer:
@@ -2063,7 +2067,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 651696151}
+  - {fileID: 651696155}
   m_VisualEffect: {fileID: 651696154}
 --- !u!73398921 &651696153
 VFXRenderer:
@@ -3229,7 +3235,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 909593437}
+  - {fileID: 909593441}
   m_VisualEffect: {fileID: 909593440}
 --- !u!73398921 &909593439
 VFXRenderer:
@@ -3454,7 +3462,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 937118154}
+  - {fileID: 937118153}
   m_VisualEffect: {fileID: 937118157}
 --- !u!73398921 &937118156
 VFXRenderer:
@@ -3817,7 +3827,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1034916021}
+  - {fileID: 1034916025}
   m_VisualEffect: {fileID: 1034916024}
 --- !u!73398921 &1034916023
 VFXRenderer:
@@ -5479,7 +5491,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1352278697}
+  - {fileID: 1352278695}
   m_VisualEffect: {fileID: 1352278700}
 --- !u!73398921 &1352278699
 VFXRenderer:
@@ -5689,7 +5703,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1431082122}
+  - {fileID: 1431082121}
   m_VisualEffect: {fileID: 1431082125}
 --- !u!73398921 &1431082124
 VFXRenderer:
@@ -6520,7 +6536,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 0
-  m_Bindings: []
+  m_Bindings:
+  - {fileID: 1730251422}
+  - {fileID: 1730251421}
   m_VisualEffect: {fileID: 1730251425}
 --- !u!73398921 &1730251424
 VFXRenderer:

@@ -9,6 +9,14 @@ namespace Rcam2 {
 //
 sealed class RcamReceiver : MonoBehaviour
 {
+    public enum INPUT_MODE
+    {
+        IPAD_CONTROLS,
+        OSC_INPUT
+    }
+
+    public INPUT_MODE inputMode = INPUT_MODE.OSC_INPUT;
+    
     #region External scene object references
 
     [SerializeField] NdiReceiver _ndiReceiver = null;
@@ -77,7 +85,16 @@ sealed class RcamReceiver : MonoBehaviour
         _metadata = Metadata.Deserialize(xml);
 
         // Input state update with the metadata
-        Singletons.InputHandle.InputState = _metadata.InputState;
+        switch (inputMode)
+        {
+            case INPUT_MODE.IPAD_CONTROLS:
+                Singletons.InputHandle.InputState = _metadata.InputState;
+                break;
+            case INPUT_MODE.OSC_INPUT:
+                Singletons.InputHandle.InputState = _metadata.InputState;
+                break;
+        }
+        
     }
 
     #endregion

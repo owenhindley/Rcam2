@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b0f7111c-59cd-443e-8b13-cb47371037bc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../../Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VFXRcamMetadataBinder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/VFXRcamMetadataBinder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../System/RcamReceiver.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../System/RcamReceiver.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Brush.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Brush.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Bubble.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Bubble.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Dot.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Dot.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Fragment.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Fragment.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Glitch.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Glitch.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Petal.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Petal.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Point.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Point.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Spark.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Spark.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Spike.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Spike.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Trail.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Trail.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/BodyFX/Voxel.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/BodyFX/Voxel.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Candy.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Candy.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Emoji.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Emoji.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Eyeball/Eyeball.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Eyeball/Eyeball.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Floor.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Floor.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Particle.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Particle.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Petal.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Petal.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Ribbon.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Ribbon.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Text.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Text.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/EnvFX/Warp.vfx" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/EnvFX/Warp.vfx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/Subgraph/Hue Animation.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/Subgraph/Hue Animation.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/Subgraph/Periodic Flash Per Strip.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/Subgraph/Periodic Flash Per Strip.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/Subgraph/Periodic Flash.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/Subgraph/Periodic Flash.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../VFX/Subgraph/Vector3 Scroll.vfxoperator" beforeDir="false" afterPath="$PROJECT_DIR$/../../VFX/Subgraph/Vector3 Scroll.vfxoperator" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/HDRPProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/HDRPProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ProjectSettings/VFXManager.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../RcamMetadata/Runtime/InputHandle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../Library/PackageCache/com.unity.visualeffectgraph@11.0.0/Runtime/Utilities/PropertyBinding/VFXPropertyBinder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../System/RcamReceiver.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../CustomPass/RcamBackgroundController.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/VFXRcamMetadataBinder.cs" />
+        <option value="$PROJECT_DIR$/../System/RcamReceiver.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1yxPlFOFVrjCDZFZosr1uNw4HfD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b0f7111c-59cd-443e-8b13-cb47371037bc" name="Default Changelist" comment="" />
+      <created>1633190415970</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1633190415970</updated>
+      <workItem from="1633190422181" duration="1638000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

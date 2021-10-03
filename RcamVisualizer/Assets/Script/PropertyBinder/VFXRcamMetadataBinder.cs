@@ -44,6 +44,8 @@ class VFXRcamMetadataBinder : VFXBinderBase
 
     public override void UpdateBinding(VisualEffect component)
     {
+        if (_colorMapProperty == null) return;
+        if (_depthMapProperty == null) return;
         var recv = Singletons.Receiver;
         var prj = ProjectionUtil.VectorFromReceiver;
         var v2w = Singletons.Receiver.CameraToWorldMatrix;

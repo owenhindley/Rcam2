@@ -6054,6 +6054,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   receivePort: 8888
+  BoolButtonStates: 00000000000000000000000000000000
+  BoolToggleStates: 00000000000000000000000000000000
+  FloatKnobStates:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!1 &1608975016
 GameObject:
   m_ObjectHideFlags: 0
@@ -6892,7 +6927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1805881186
 Transform:
   m_ObjectHideFlags: 0
@@ -6914,7 +6949,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805881185}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -7016,8 +7051,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExecuteInEditor: 1
-  m_Bindings:
-  - {fileID: 1805881189}
+  m_Bindings: []
   m_VisualEffect: {fileID: 1805881188}
 --- !u!1 &1837650423
 GameObject:

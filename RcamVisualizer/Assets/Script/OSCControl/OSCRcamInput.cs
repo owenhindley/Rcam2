@@ -14,6 +14,10 @@ public class OSCRcamInput : MonoBehaviour
     public OSCReciever oscReceiver = new OSCReciever();
 
     public int receivePort = 8888;
+
+    public bool[] BoolButtonStates = new bool[16];
+    public bool[] BoolToggleStates = new bool[16];
+    public float[] FloatKnobStates = new float[32];
     
     // Start is called before the first frame update
     void Start()
@@ -49,6 +53,8 @@ public class OSCRcamInput : MonoBehaviour
             Debug.LogError("error parsing argument");
             Debug.LogError(m.Data);
         }
+
+        bool stateDidChange = false;
         
         var bits = m.Address.Split('/');
         if (bits[1] == "rcam")
@@ -63,8 +69,9 @@ public class OSCRcamInput : MonoBehaviour
                     }
                     else
                     {
-                        inputState.SetButtonData(controlId, (int)val);
-                        Debug.Log($"Setting button {controlId} to {val}");
+                        BoolButtonStates[controlId] = val > 0;
+                        Debug.Log($"Setting button {controlId} to {(val > 0)}");
+                        stateDidChange = true;
                     }
                     break;
                 case "toggle":
@@ -74,15 +81,12 @@ public class OSCRcamInput : MonoBehaviour
                     }
                     else
                     {
-                        var currentToggle = inputState.GetToggleData(controlId) > 0;
+                        var currentToggle = BoolToggleStates[controlId];
                         var newToggle = val > 0.0f;
 
-                        if (newToggle)
-                        {
-                            inputState.SetToggleData(controlId, currentToggle ? 0 : 1);
-                            Debug.Log($"Setting toggle {controlId} to {!currentToggle}");
-                        }
-                        
+                        if (newToggle) BoolToggleStates[controlId] = !BoolToggleStates[controlId];
+                        Debug.Log($"Setting toggle {controlId} to {!currentToggle}");
+                        stateDidChange = true;
                     }
                     break;
                 case "knob":
@@ -92,10 +96,33 @@ public class OSCRcamInput : MonoBehaviour
                     }
                     else
                     {
-                        inputState.SetKnobData(controlId, val);
+                        FloatKnobStates[controlId] = val;
+                        stateDidChange = true;
                         Debug.Log($"Setting knob {controlId} to {val}");
                     }
                     break;
+            }
+
+            if (stateDidChange)
+            {
+                // this is weeeeird
+                for (var i = 0; i < 2; i++)
+                {
+                    var bdata = 0;
+                    var tdata = 0;
+
+                    for (var bit = 0; bit < 8; bit++)
+                    {
+                        if (BoolButtonStates[bit]) bdata += 1 << bit;
+                        if (BoolToggleStates[bit]) tdata += 1 << bit;
+                    }
+
+                    inputState.SetButtonData(i, bdata);
+                    inputState.SetToggleData(i, tdata);
+                }
+                
+                for (var i = 0; i < 32; i++)
+                    inputState.SetKnobData(i, (int)(FloatKnobStates[i] * 255));
             }
             
         }
